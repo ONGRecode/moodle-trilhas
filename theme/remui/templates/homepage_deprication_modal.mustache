@@ -1,0 +1,52 @@
+<div id="homepagedepricationmodal" class="modal fade ">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header d-flex justify-content-end">
+                <button type="button" class="close dep-modal-close" data-dismiss="modal"><span class="edw-icon edw-icon-Cancel"></span></button>
+            </div>
+            <div class="modal-body d-flex flex-column p-ml-10 p-mb-10 p-0">
+                <div class="d-flex">
+                    <div class="d-flex flex-column modal-body-left-region">
+                        <div class="d-flex flex-column flex-gap-5">
+                            <div class="d-flex flex-column ">
+                                <h2 class="h-semibold-2 p-mb-2d5">{{#str}}homepagedepricationmodalst1, theme_remui{{/str}}</h2>
+                                {{#str}}homepagedepricationmodalst2, theme_remui{{/str}}
+                            </div>
+                            <ul class="features-list m-0 p-0 ">
+                                <li class="feature d-flex flex-gap-1 align-items-center p-mb-2d5"><span class="fa fa-check"></span><p class="para-semibold-1 m-0">{{#str}}homepagedepricationmodalfeatureitem1, theme_remui{{/str}}</p></li>
+                                <li class="feature d-flex flex-gap-1 align-items-center p-mb-2d5"><span class="fa fa-check"></span><p class="para-semibold-1 m-0">{{#str}}homepagedepricationmodalfeatureitem2, theme_remui{{/str}} </p></li>
+                                <li class="feature d-flex flex-gap-1 align-items-center p-mb-2d5"><span class="fa fa-check"></span><p class="para-semibold-1 m-0">{{#str}}homepagedepricationmodalfeatureitem3, theme_remui{{/str}} </p></li>
+                                <li class="feature d-flex flex-gap-1 align-items-center"><span class="fa fa-check"></span><p class="para-semibold-1 m-0">{{#str}}homepagedepricationmodalfeatureitem4, theme_remui{{/str}}</p></li>
+                              </ul>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h4 class="p-mb-2d5 h-bold-4">{{#str}}homepagedepricationmodalst3, theme_remui{{/str}}</h4>
+                            <p class="p-mb-2d5 para-regular-1">{{#str}}homepagedepricationmodalst4, theme_remui{{/str}}</p>
+                            <div class="p-mb-2d5">
+                                <a href="{{wwwroot}}/admin/settings.php?section=themesettingremui#theme_remui_frontpage" class="btn btn-primary homepage-migrate-btn">{{#str}}homepagedepricationmodalst5, theme_remui{{/str}}</a>
+                                <a class="p-ml-2d5 d-inline text-link-regular do-not-show-btn" style="cursor: pointer;">{{#str}}homepagedepricationmodalst6, theme_remui{{/str}}</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-right-imag-wrapper">
+                        <img src="{{dephomepagerightimgurl}}" alt="">
+                    </div>
+                </div>
+                <p class="m-0 para-regular-2 modal-bottom-note">{{#str}}homepagedepricationmodalst7, theme_remui{{/str}} </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{#js}}
+require(['jquery', 'core_user/repository'], function($, UserRepository){
+	$(document).ready(function(){
+        $("#homepagedepricationmodal").modal('show');
+        $(".do-not-show-btn").click(function(){
+            UserRepository.setUserPreference('homepagedepricatedseen', true);
+            $("#homepagedepricationmodal").modal('hide')
+
+        });
+	});
+});
+{{/js}}

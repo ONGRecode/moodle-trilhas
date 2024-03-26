@@ -1,0 +1,67 @@
+CHANGES LOG
+
+Version 4.2.3
+=============
+Feature - New components added :
+    1. Image slider with text
+    2. Edwiser Profile Sliders
+    3. Edwiser Tabs With Accordion
+    4. Vertical Slider 1
+    5. Vertical Slider 2
+Fix - Blocks unintentionally deleted from custom pages when adding page layouts to a other custom page.
+
+Version 4.2.2
+=============
+Feature - Adding functionality to create custom pages. This functionality is in sync with Edwiser RemUI Theme.
+Fix - About us section migration bg image issue fixed.
+
+Version 4.2.1
+=============
+Tweak: Responsive designs can now be created by applying styling in the device mode provided in Pagebuilder (Desktop, Tablet, Mobile).
+Tweak: Improved Testimonial design 4.
+Tweak: Enhanced autoplay settings of sliders.
+Tweak: Added Undo/Redo shortcut with Ctrl+Z/Ctrl+Y and added Reload option with Alt+R.
+Fix: Fixed the timeout issue with the block update button
+
+Version 4.2.0
+=============
+Feature - Introducing new 88 blocks along with older blocks.
+Feature - Redesigned the UI of the page builder live customizer.
+Feature - Option to add a new row in the page builder live customizer.
+Feature - New components added  
+    1. Edwiser Image gallery  
+    2. Edwiser Testimonials  
+    3. Edwiser Sliders  
+    4. Edwiser Courses and Categories  
+    5. Separator
+Feature - New page layouts added for a quick start with page creation.
+Feature - Added a block modal, which will show blocks in separate categories.
+
+Version 4.1.2
+=============
+Fix   -  Categories not visible in courses block this issue is fixed.
+Tweak -  Lang strings changed
+Tweak -  Further UI/UX improvements done.
+
+Version 4.1.1
+=============
+Tweak - Add a block modal design improvements.
+
+Version 4.1.0
+=============
+Version Compatible with Edwiser RemUI 4.1.0
+
+Version 4.0.2
+=============
+Version Compatible with Edwiser RemUI 4.0.4(Beta)
+Tweak - Button light not visible with Edwiser RemUI Beta theme.
+
+Version 4.0.1
+=============
+
+Tweak - Added Note on add block modal to activate Edwiser Page Builder Filter plugin if it is not active.
+
+Version 4.0.0
+=============
+
+Moodle 4.0 compatible version of Edwiser Page Builder. It allows users to edit content dynamically using our page editor.
